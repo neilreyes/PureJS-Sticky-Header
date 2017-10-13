@@ -1,0 +1,105 @@
+body,
+html{
+	font-family: 'Open Sans', Arial;
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	width: 100%;
+	-webkit-transform: translate(0,0);
+	        transform: translate(0,0);
+	position: fixed;
+	background: #0D3372;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+header h1{
+	-webkit-transform: scale(1);
+	        transform: scale(1);
+	-webkit-transition: padding 0.3s ease 0.7s;
+	transition: padding 0.3s ease 0.7s;
+	color: #ffffff;
+	margin: 0;
+}
+
+.has-scrolled header{
+	
+}
+
+.nav-up header{
+	-webkit-transform: translate(0, -100%);
+	transform: translate(0, -100%);
+}
+
+.has-scrolled.nav-down header{
+	background: #D11051;
+}
+
+.has-scrolled.nav-down header .container{
+	padding: 10px;
+}
+
+.has-scrolled main{
+	background: #e4e4e4;
+}
+
+main{
+	padding-top: 76px; /* Value is from the height of header element */
+}
+
+main .container{
+	height: inherit;
+}
+
+section{
+	padding: 100px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
+}
+
+section p{
+	font-size: 24px;
+}
+
+#debug{
+	color: #ffffff;
+	background: #000000;
+	padding: 20px;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	z-index: 100;
+}
+
+.container{
+	margin: 0 auto;
+	width: 100%;
+	padding: 20px;
+}
+
+@media screen and (min-width: 768px){
+	.container{
+		width: 700px;
+	}
+}
+
+@media screen and (min-width: 992px){
+	.container{
+		width: 900px;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	.container{
+		width: 1170px;
+	}
+}
