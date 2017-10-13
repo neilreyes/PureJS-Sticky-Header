@@ -1,3 +1,46 @@
+var HeaderScroll = {
+	config: {
+		didScroll: false,
+		lastScrollAmount: 0,
+		headerHeight: null,
+	},
+
+	init: function(){
+		window.addEventListener('scroll', this.handScrollEvent(event));
+	},
+
+	handScrollEvent: function(event){
+		if( !this.didScroll ){
+			this.didScroll = true;
+			setTimeout(this.scrollPage,1000);
+		}
+	},
+
+	scrollPage: function(){
+		console.log(true);
+	},
+
+	setup: function( object ){
+		var instance = Object.create(this);
+		return config;
+	}
+}
+
+var siteHeader = Object.create(HeaderScroll);
+siteHeader.init();
+
+console.log( siteHeader );
+
+
+
+
+
+
+
+
+
+
+
 var onScrollAnimateHeader = function(){
 	var didScroll = false;
 	var lastScrollAmount = 0;
